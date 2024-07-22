@@ -3,7 +3,7 @@ Software zur Modellierung von spezifischen Quantensystemen durch ein QFT-Modell 
 
 # Installation unter Linux und Mac Betriebssystemen
 *********************************************************************************************************************
-    git clone https://github.com/alexej-schelle/IQFT-Modell.git
+    git clone https://github.com/alexej-schelle/IQFT-Modell.git and start the software with __init__.py
 *********************************************************************************************************************
 
 # Installation unter Windows Betriebssystemen
