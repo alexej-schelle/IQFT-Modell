@@ -1,4 +1,3 @@
-
 ############################################################################################################################################################################
 #
 #
@@ -7,18 +6,13 @@
 #
 ############################################################################################################################################################################
 #                                                                                                                                              																										  
-#   Markov sampling method for calculation of the frequency comb spectrum for a quantized field in an external confinement at ultra-cold temperatures
+#   Markov sampling software for calculation of the frequency comb spectrum for a quantized field in an external confinement at ultra-cold temperatures
 #
 #   The Python orthogonal_source.py calculates :
 #
-#   - Frequency comb spectra of superimposed wave fields (atomic lasers) released from a magneto-optical trap
+#   - Frequency comb spectra of superimposed wave fields (atomic lasers) releazed from a magneto-optical trap
 # 
-#  * :
-# 
-#   License Copyright:  Dr. A. Schelle, Bachschmidstr. 4, 87600 Kaufbeuren 
-#   License Type :      MIT license (2023)
-#   License Contact:    E-Mail : alexej.schelle@gmail.com
-# 
+#   * :
 #   ** : 
 #
 #   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files 
@@ -255,65 +249,38 @@ for l in range(1, sample):
     	    	      
 # Plot superimposed wave fields at equilibrium    
 
-#plt.figure(1)
-#plt.hist2d(mu_x, mu_y, bins = 1000)
-#plt.tick_params(axis='both', which='major', labelsize = 12)
-#plt.xlabel('$Re(\Psi)$', fontsize = 14)
-#plt.ylabel('$Im(\Psi)$', fontsize = 14)
-#plt.xlim([-1.5, 1.5])
-#plt.ylim([-1.5, 1.5])
-#cbar = plt.colorbar()
-#cbar.ax.set_ylabel('$\Pi[Re(\Psi),Im(\Psi))]$')
-#plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_1.png')
+plt.figure(1)
+plt.hist2d(mu_x, mu_y, bins = 1000)
+plt.tick_params(axis='both', which='major', labelsize = 12)
+plt.xlabel('$Re(\Psi)$', fontsize = 14)
+plt.ylabel('$Im(\Psi)$', fontsize = 14)
+plt.xlim([-1.5, 1.5])
+plt.ylim([-1.5, 1.5])
+cbar = plt.colorbar()
+cbar.ax.set_ylabel('$\Pi[Re(\Psi),Im(\Psi))]$')
+plt.savefig('/figures/FigureSuperimposedFields.png')
 
-#plt.figure(2)
-#plt.hist(phase_dist, bins = 100)
-#plt.tick_params(axis='both', which='major', labelsize = 12)
-#plt.xlabel('$\phi[\pi]$', fontsize = 14)
-#plt.ylabel('$\Pi[\phi]$', fontsize = 14)
-#plt.xlim([-1.0, 1.0])
-#cbar.ax.set_ylabel('$\pi[\phi]$')
-#plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_2.png')
+plt.figure(2)
+plt.hist(phase_dist, bins = 100)
+plt.tick_params(axis='both', which='major', labelsize = 12)
+plt.xlabel('$\phi[\pi]$', fontsize = 14)
+plt.ylabel('$\Pi[\phi]$', fontsize = 14)
+plt.xlim([-1.0, 1.0])
+cbar.ax.set_ylabel('$\pi[\phi]$')
+plt.savefig('/figures/FigurePhaseComb.png')
 
-#plt.figure(3)
-#plt.hist(betamu_x, bins = 100)
-#plt.tick_params(axis='both', which='major', labelsize = 12)
-#plt.xlabel('$\omega~[Hz]$', fontsize = 14)
-#plt.ylabel('$\Pi[\omega]$', fontsize = 14)
-#cbar.ax.set_ylabel('$\Pi[\omega]$')
-#plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_3.png')
-
-#plt.figure(4)
-#plt.hist(betamu_y, bins = 100)
-#plt.tick_params(axis='both', which='major', labelsize = 12)
-#plt.xlabel('$\Delta~[Hz]$', fontsize = 14)
-#plt.ylabel('$\Pi[\Delta]$', fontsize = 14)
-#cbar.ax.set_ylabel('$\Pi[\Delta]$')
-#plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_4.png')
-
-plt.figure(5)
-plt.hist2d(betamu_x_1, ptn_number_1, bins = 100)
+plt.figure(3)
+plt.hist(betamu_x, bins = 100)
 plt.tick_params(axis='both', which='major', labelsize = 12)
 plt.xlabel('$\omega~[Hz]$', fontsize = 14)
-plt.ylabel('$\omega_x+\omega_y+\omega_z~[Hz]$', fontsize = 14)
-cbar = plt.colorbar()
-cbar.ax.set_ylabel('$\Pi~[\omega_x+\omega_y+\omega_z,\omega]$ and $\omega_x = \omega_y = \omega_z$')
-plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_5.png')
+plt.ylabel('$\Pi[\omega]$', fontsize = 14)
+cbar.ax.set_ylabel('$\Pi[\omega]$')
+plt.savefig('/figures/FigureFrequencyDistribution.png')
 
-plt.figure(6)
-plt.hist2d(betamu_x_2, ptn_number_2, bins = 100)
+plt.figure(4)
+plt.hist(betamu_y, bins = 100)
 plt.tick_params(axis='both', which='major', labelsize = 12)
-plt.xlabel('$\omega~[Hz]$', fontsize = 14)
-plt.ylabel('$\omega_x+\omega_y+\omega_z~[Hz]$', fontsize = 14)
-cbar = plt.colorbar()
-cbar.ax.set_ylabel('$\Pi~[\omega_x+\omega_y+\omega_z,\omega]$ and $\omega_x = \omega_y$')
-plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_6.png')
-
-plt.figure(7)
-plt.hist2d(betamu_x_3, ptn_number_3, bins = 100)
-plt.tick_params(axis='both', which='major', labelsize = 12)
-plt.xlabel('$\omega~[Hz]$', fontsize = 14)
-plt.ylabel('$\omega_x+\omega_y+\omega_z~[Hz]$', fontsize = 14)
-cbar = plt.colorbar()
-cbar.ax.set_ylabel('$\Pi~[\omega_x+\omega_y+\omega_z,\omega]$')
-plt.savefig('/Users/krealix/Desktop/Orthogonal_Field_Theory/Source_Code/fig_7.png')
+plt.xlabel('$\Delta~[Hz]$', fontsize = 14)
+plt.ylabel('$\Pi[\Delta]$', fontsize = 14)
+cbar.ax.set_ylabel('$\Pi[\Delta]$')
+plt.savefig('/figures/FigureDetuning.png')
