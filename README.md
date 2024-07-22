@@ -18,12 +18,12 @@ Software zur Modellierung von spezifischen Quantensystemen durch ein QFT-Modell 
 
 # Wissenschaftliche Referenzen
 *********************************************************************************************************************
-    - https://arxiv.org/abs/2407.06208
-    - https://arxiv.org/abs/2305.19722
-    - https://arxiv.org/abs/2204.01730
-    - https://arxiv.org/abs/1410.7058
-    - https://arxiv.org/abs/1110.6646
-    - https://arxiv.org/abs/1008.0788
+    - https://arxiv.org/abs/2407.06208 (submitted to Quanta)
+    - https://arxiv.org/abs/2305.19722 (Quanta 2023; 12: 171-179)
+    - https://arxiv.org/abs/2204.01730 (Scholarly article on arXiv.org (2022))
+    - https://arxiv.org/abs/1410.7058 (Fluctuations and Noise Letters, Vol. 16, No. 1 (March) 2017)
+    - https://arxiv.org/abs/1110.6646 (Fluctuation and Noise Letters (2012), Vol. 11 No. 4)
+    - https://arxiv.org/abs/1008.0788 (Phys. Rev. A 83, 013615 (2011))
 *********************************************************************************************************************
 
 Work in Progress...
