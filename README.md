@@ -1,5 +1,5 @@
 # IQFT-Modell
-Software zur Modellierung von spezifischen Quantensystemen durch ein neues QFT-Modell für ideale Gase.
+Software zur Modellierung von spezifischen Quantensystemen durch ein Teilchenzahl-erhaltendes QFT-Modell für ideale Gase.
 
 # Installation unter Linux und Mac Betriebssystemen
 *********************************************************************************************************************
@@ -37,6 +37,12 @@ Software zur Modellierung von spezifischen Quantensystemen durch ein neues QFT-M
     
 *********************************************************************************************************************
 
+# Autoren
 
+*********************************************************************************************************************
+
+FH-Doz. Dr. Alexej Schelle et al.
+
+*********************************************************************************************************************
 
 Work in Progress...
