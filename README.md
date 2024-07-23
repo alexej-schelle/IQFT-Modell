@@ -41,7 +41,7 @@ Software zur Modellierung von spezifischen Quantensystemen durch ein Teilchenzah
 
 *********************************************************************************************************************
 
-FH-Doz. Dr. Alexej Schelle et al.
+FH-Doz. Dr. Alexej Schelle
 
 *********************************************************************************************************************
 
